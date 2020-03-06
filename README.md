@@ -39,14 +39,11 @@ The motor driver employed was L298n, a double half-bridge motor controller that 
 
 ![](https://github.com/rhitvik/Image_Recognition_based_Master-Slave_Manipulator_Mechanism/blob/master/Images_and_Screenshots/_fast_Prototyped_Motor_Driver_Shield.jpg)
 
-###########################schematic
-
 ## Power system
 
 The power supply employed in the system is a pair of SMPS (switched-mode power supply) 5V at 4 amp for powering and running the raspberry pi, motor driver logic supply, cooling fan of raspberry pi and motor driver IC.
 
-The 12 V power supply is connected to the motor driver that feeds the power to the motors. It also forms the part of the freewheeling snubber circuit.
-The main reason that we don’t use the same power supply in the system is that the initial power drop of voltage to start the actuation assembly might trigger the Brown-out reset in the circuit. This will result in forced restarting of the processing unit (raspberry pi).
+The 12 V power supply is connected to the motor driver that feeds the power to the motors. It also forms the part of the freewheeling snubber circuit. The main reason that we don’t use the same power supply in the system is that the initial power drop of voltage to start the actuation assembly might trigger the Brown-out reset in the circuit. This will result in forced restarting of the processing unit (raspberry pi).
 
 ## Actuator assembly
 
